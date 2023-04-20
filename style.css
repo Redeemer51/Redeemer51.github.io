@@ -1,0 +1,179 @@
+@charset "utf-8";
+/* ====== google font ====== */
+@import url("https://fonts.googleapis.com/css?family=Rajdhani:300&display=swap");
+
+/* CSS Document */
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Rajdhani', sans-serif;
+}
+
+body{
+	height: 100vh;
+	background-image: var(--body-color);
+	background-image: url('background2.jpeg');
+	background-size: cover;
+	background-position: center;
+	margin: 0 auto;
+
+}
+
+/* ====== Navigator ====== */
+.side-bar{
+	/* ====== Navigator position ====== */
+	position: fixed;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 250px;
+	
+	padding: 10px 14px;
+	
+	
+	/* ====== Navigator glass effect ====== */
+	background-color: rgba(255, 255, 255, 0.2);
+	backdrop-filter: blur(30px);
+	-webkit-backdrop-filter: blur(20px);
+	border-radius: 0 20px 20px 0;
+	border: 3px solid  rgba(255, 255, 255, 0.18);
+	box-shadow: o 8px 32px 0 rgba(0, 0, 0, 0.37);
+	transition: all 0.5s ease;
+	
+}
+
+
+.close{
+	width: 78px;
+	
+}
+.side-bar .close {
+	opacity: 0;
+}
+
+
+.side-bar.close .icon-names{
+	opacity: 0;
+}
+
+.icon-names{
+	transition: all 0.1s ;
+}
+
+.nav-item:hover {
+	border: 2px solid #ffffff;
+	border-radius: 8px;
+	transition: all 0.3s ease;
+  }
+
+/* ====== Navigation Icons and text ====== */
+.icon{
+	filter: brightness(0%) invert(100%);
+	height: 40px;
+	width: 40px;
+}
+
+.navigator{
+	flex-direction: column;
+	display: flex;
+	justify-items: center;
+	list-style: none;
+	margin-top: 50px;
+	
+}
+.nav-item {
+	font-size: 25px;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	text-decoration: none;
+	margin-top: 10px;
+	gap: 15px;
+	letter-spacing: 12px;
+	color: #ffffff;
+	text-shadow: 0 0 5px rgba(0, 0, 0, 0.7);
+  }
+  /* ////// Navigation Icons and text ////// */
+
+
+  .side-bar header{
+	position: relative;
+}
+.side-bar .text{
+	font-size: 35px;
+	font-weight: bolder;
+	color: #ffffff;
+	text-shadow: 0 0 5px rgba(0, 0, 0, 0.7);
+	letter-spacing: 0.80em;
+	margin-left: 20px;
+	
+}
+
+.side-bar header .image-text{
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	margin-top: 45px;
+}
+
+header .image-text .header-text{
+	display: flex;
+	flex-direction: column;
+}
+
+/* ====== navigator arrow ====== */
+.side-bar header .toggle-arrow{
+	position: absolute;
+	top: 50%;
+	right: -15%;
+	transform: translateY(-50%);
+	height: 25px;
+	width: 25px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-color: #ffffff;
+	box-shadow: 0 0 5px rgba(0, 0, 0, 0.7);;
+	border-radius: 50px;
+	
+}	
+
+/* ====== Tshirt Page ====== */
+.tshirt-mid-frame{
+	display: flex;
+	background-color: rgb(255, 255, 255);
+	height: 500px;
+	width: 500px;
+	position:absolute;
+	left: 50%;
+	top: 40%;
+	transform:  translateX(-50) translateY(-50);	
+}
+#canvas{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 500px;
+	height: 500px;
+	border: 1px solid black;
+}
+#image-upload {
+	position: absolute;
+	top: 10px;
+	left: 10px;
+  }
+/* ////// Tshirt Page ////// */
+
+/* ====== Tshirt Page ====== */
+.mugs-mid-frame{
+	display: flex;
+	background-color: rgb(255, 255, 255);
+	height: 500px;
+	width: 500px;
+	position: fixed;
+	left: 50%;
+	top: 40%;
+	transform:  translateX(-50) translateY(-50);
+	
+}

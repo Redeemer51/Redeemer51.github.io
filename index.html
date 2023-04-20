@@ -1,0 +1,54 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Store</title>
+<!--====== CSS ======-->
+<link rel="stylesheet" href="style.css">
+<script src="script.js"></script>
+
+<!--====== Boxicons CSS ======-->
+<link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>	
+
+<body>
+	<nav class="side-bar">
+		<header>
+			<div class="image-text">
+				
+				</span>
+				<div class="text header-text">
+					<span class="icon-names">STORE</span>
+				</div>
+			</div>
+
+			<i class="toggle-arrow">
+				<img src="chevron-right-regular-24.png">
+				<nav id="myNav" class="side-bar close"></nav>
+			</i>
+		</header>
+		<!--====== Navigator icons and text ======-->
+		<div class="navigator">
+			<a href="tshirtsPage.html" class="nav-item">
+				<img src="tshirt.png" class="icon">
+				<span class="icon-names">TSHIRTS</span>
+			</a>
+			<a href="mugsPage.html" class="nav-item">
+				<img src="mugs.png" class="icon">
+				<span class="icon-names">MUGS</span>
+			</a>
+	
+		</div>
+		<!--////// Navigator icons and text //////-->
+	
+	</nav>
+
+	<!--====== Responsive sidebar ======-->
+	<script>const sideBar = document.querySelector(".side-bar");
+		const toggleArrow = document.querySelector(".toggle-arrow");
+		
+		toggleArrow.addEventListener("click", function(){
+			sideBar.classList.toggle("close");
+		});</script>
+</body>
+</html>	
