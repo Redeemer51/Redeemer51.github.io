@@ -150,14 +150,19 @@ header .image-text .header-text{
 	top: 40%;
 	transform:  translateX(-50) translateY(-50);	
 }
-#canvas{
+#canvas {
 	position: absolute;
-	top: 0;
-	left: 0;
-	width: 500px;
+	top: 50px;
+	left: 50px;
+	width: 400px;
 	height: 500px;
+	background-color: white;
 	border: 1px solid black;
-}
+	border-radius: 5px;
+	box-shadow: 5px 5px 10px #888888;
+	
+  }
+
 #image-upload {
 	position: absolute;
 	top: 10px;
