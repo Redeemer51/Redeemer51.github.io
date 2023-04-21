@@ -2,7 +2,7 @@
 /* ====== google font ====== */
 @import url("https://fonts.googleapis.com/css?family=Rajdhani:300&display=swap");
 
-@media (max-width: 767px) {
+/*@media (max-width: 767px) {
 	.side-bar{
 		display: none;
 	}
