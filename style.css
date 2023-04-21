@@ -140,34 +140,19 @@ header .image-text .header-text{
 }	
 
 /* ====== Tshirt Page ====== */
-.tshirt-mid-frame{
+.tshier-content{
 	display: flex;
-	background-color: rgb(255, 255, 255);
-	height: 500px;
-	width: 500px;
-	position:absolute;
-	left: 50%;
-	top: 40%;
-	transform:  translateX(-50) translateY(-50);	
+	align-items: center;
+	justify-content: center;
+	height: 100vh;
 }
-#canvas {
-	position: absolute;
-	top: 50px;
-	left: 50px;
-	width: 400px;
-	height: 500px;
-	background-color: white;
-	border: 1px solid black;
-	border-radius: 5px;
-	box-shadow: 5px 5px 10px #888888;
-	
-  }
 
-#image-upload {
-	position: absolute;
-	top: 10px;
-	left: 10px;
-  }
+#tshir-canvas{
+	width: 600px;
+	height: 800px;
+	
+}
+
 /* ////// Tshirt Page ////// */
 
 /* ====== Tshirt Page ====== */
