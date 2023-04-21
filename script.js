@@ -6,7 +6,7 @@ document.addEventListener("DOMContentLoaded", function() {
 		const ctx = canvas.getContext('2d');
 		
 		const img = new Image();
-		img.src = 'tshirtcanvas.png';
+		img.src = 'media/tshirtcanvas.png';
 		img.onload = function() {
 		  canvas.width = img.width;
 		  canvas.height = img.height;
@@ -33,3 +33,6 @@ document.addEventListener("DOMContentLoaded", function() {
       localStorage.setItem("isSidebarClosed", isClosed.toString());
     });
   });
+
+
+

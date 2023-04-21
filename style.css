@@ -29,11 +29,18 @@
 	box-sizing: border-box;
 	font-family: 'Rajdhani', sans-serif;
 }
+.parent-container{
+	overflow: auto;
+	display: flex;
+	justify-content: center;
+	margin-left: 250px;
+	align-items: center;
+}
 
 body{
 	height: 100vh;
 	background-image: var(--body-color);
-	background-image: url('background2.jpeg');
+	background-image: url('media/background4.jpeg');
 	background-size: cover;
 	background-position: center;
 	margin: 0 auto;
@@ -161,21 +168,60 @@ header .image-text .header-text{
 
 /* ====== Tshirt Page ====== */
 .tshier-content{
+	float: left;
 	display: flex;
 	align-items: center;
 	justify-content: center;
 	height: 100vh;
+	
 }
 
 #tshir-canvas{
 	width: 600px;
 	height: 800px;
+
+}
+.outer-canvas{
+	width: 800px;
+	height: 1000px;
+	background-color: rd;
+	align-items: center;
+	display: flex;
+	justify-content: center;
+}
+
+.colors-nest {
+	text-align: center;
+	display: flex;
+	background-color: rd;
+	align-items: center;
+	width: 400px;
+	margin-left: 100px;
+
+}
+
+.colors-nest ul{
+	list-style: none;
+	padding: 0;
+	margin: 0;
+	align-items: center;
+	margin-left: 28%;
+}
+.colors-nest li{
+	display: inline-block;
 	
+	
+}
+.color-icon{
+	height: 30px;
+	width: 25px;
+	margin-left: 28px;
+
 }
 
 /* ////// Tshirt Page ////// */
 
-/* ====== Tshirt Page ====== */
+
 .mugs-mid-frame{
 	display: flex;
 	background-color: rgb(255, 255, 255);
@@ -187,3 +233,6 @@ header .image-text .header-text{
 	transform:  translateX(-50) translateY(-50);
 	
 }
+/* ====== customization panel ====== */
+
+
