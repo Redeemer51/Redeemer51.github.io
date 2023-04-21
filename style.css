@@ -2,6 +2,26 @@
 /* ====== google font ====== */
 @import url("https://fonts.googleapis.com/css?family=Rajdhani:300&display=swap");
 
+@media (max-width: 767px) {
+	.side-bar{
+		display: none;
+	}
+	.toggle-arrow{
+		display: block;
+		position: absolute;
+		top: 0;
+		right: 0;
+		padding: 10px;
+	}
+	.icon-names{
+		font-size: 1.2rem;
+		margin-left: 10px;
+	}
+	.navigator{
+		margin-top: 50px;
+	}
+}
+
 /* CSS Document */
 *{
 	margin: 0;
