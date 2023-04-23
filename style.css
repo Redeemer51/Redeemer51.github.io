@@ -2,27 +2,29 @@
 /* ====== google font ====== */
 @import url("https://fonts.googleapis.com/css?family=Rajdhani:300&display=swap");
 
-/*@media (max-width: 767px) {
-	.side-bar{
-		display: none;
+@media (max-width: 767px) {
+	.side-bar {
+	  display: none;
 	}
-	.toggle-arrow{
-		display: block;
-		position: absolute;
-		top: 0;
-		right: 0;
-		padding: 10px;
+	.toggle-arrow {
+	  display: block;
+	  position: absolute;
+	  top: 0;
+	  right: 0;
+	  padding: 10px;
 	}
-	.icon-names{
-		font-size: 1.2rem;
-		margin-left: 10px;
+	.icon-names {
+	  font-size: 1.2rem;
+	  margin-left: 10px;
 	}
-	.navigator{
-		margin-top: 50px;
+	.navigator {
+	  margin-top: 50px;
 	}
-}
-
-/* CSS Document */
+	.canvas {
+	  margin-left: 0;
+	  width: 100%;
+	}
+  }
 *{
 	margin: 0;
 	padding: 0;
@@ -33,8 +35,9 @@
 	overflow: auto;
 	display: flex;
 	justify-content: center;
-	margin-left: 250px;
+	flex-direction: row-reverse;
 	align-items: center;
+	height: 100vh;
 }
 
 body{
@@ -55,8 +58,8 @@ body{
 	left: 0;
 	height: 100%;
 	width: 250px;
-	
 	padding: 10px 14px;
+	float: left;
 	
 	
 	/* ====== Navigator glass effect ====== */
@@ -120,11 +123,12 @@ body{
 	letter-spacing: 12px;
 	color: #ffffff;
 	text-shadow: 0 0 5px rgba(0, 0, 0, 0.7);
-  }
-  /* ////// Navigation Icons and text ////// */
+}
+  
+/* ////// Navigation Icons and text ////// */
 
 
-  .side-bar header{
+.side-bar header{
 	position: relative;
 }
 .side-bar .text{
@@ -167,24 +171,31 @@ header .image-text .header-text{
 }	
 
 /* ====== Tshirt Page ====== */
+.canvas{
+	margin-left: 250px; /* equal to width of side bar */
+	width: calc(100% - 250px); /* 100% width minus side bar width */
+	float: left;
+	flex-grow: 1;
+}
 .tshier-content{
 	float: left;
 	display: flex;
 	align-items: center;
 	justify-content: center;
 	height: 100vh;
+	width: 100svh;
+	flex: 1;
 	
 }
 
 #tshir-canvas{
 	width: 600px;
-	height: 800px;
+	height: 100%;
 
 }
 .outer-canvas{
-	width: 800px;
-	height: 1000px;
-	background-color: rd;
+	width: 600px;
+	height: 100%;
 	align-items: center;
 	display: flex;
 	justify-content: center;
@@ -235,4 +246,14 @@ header .image-text .header-text{
 }
 /* ====== customization panel ====== */
 
+.customization-nest{
+    float: right;
+	background-color: #ffffff;
+	height: 50px;
+	width: 50px;
+    
+    overflow: auto;
+	
+		
+}
 
