@@ -1,17 +1,28 @@
 //------------------------------------------------load tshirt canvas---------------------------------------------------------------------
 document.addEventListener("DOMContentLoaded", function() {
 
-
     const canvas = document.getElementById('tshir-canvas');
 		const ctx = canvas.getContext('2d');
+
+		canvas.width = window.innerWidth;
+    canvas.height = window.innerHeight;
 		
-		const img = new Image();
-		img.src = 'media/tshirtcanvas.png';
+    var img = new Image();
 		img.onload = function() {
-		  canvas.width = img.width;
-		  canvas.height = img.height;
-		  ctx.drawImage(img, 0, 0);
+		  ctx.drawImage(img, 0, 0, canvas.width, canvas.height);
 		};
+    img.src = 'media/tshirtcanvas.png';
+
+    window.addEventListener('resize', function() {
+      canvas.width = window.innerWidth;
+      canvas.height = window.innerHeight;
+      var scaleFactor = Math.min(canvas.width / img.width, canvas.height / img.height);
+      var scaledWidth = img.width * scaleFactor;
+      var scaledHeight = img.height * scaleFactor;
+      var x = (canvas.width - scaledWidth) / 2;
+      var y = (canvas.height - scaledHeight) / 2;
+      ctx.drawImage(img, x, y, scaledWidth, scaledHeight);
+    });
   });
 
   //------------------------------------------------Side bar---------------------------------------------------------------------

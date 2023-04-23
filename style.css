@@ -173,32 +173,26 @@ header .image-text .header-text{
 /* ====== Tshirt Page ====== */
 .canvas{
 	margin-left: 250px; /* equal to width of side bar */
-	width: calc(100% - 250px); /* 100% width minus side bar width */
+	width: calc(50% - 250px); /* 100% width minus side bar width */
 	float: left;
 	flex-grow: 1;
+	position: relative;
 }
 .tshier-content{
 	float: left;
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	height: 100vh;
-	width: 100svh;
+	height: 400px;
+	width: 100%;
 	flex: 1;
 	
 }
 
 #tshir-canvas{
-	width: 600px;
-	height: 100%;
+	max-width: 100%;
+	max-width: 100%;
 
-}
-.outer-canvas{
-	width: 600px;
-	height: 100%;
-	align-items: center;
-	display: flex;
-	justify-content: center;
 }
 
 .colors-nest {
@@ -251,9 +245,7 @@ header .image-text .header-text{
 	background-color: #ffffff;
 	height: 50px;
 	width: 50px;
-    
     overflow: auto;
-	
 		
 }
 
