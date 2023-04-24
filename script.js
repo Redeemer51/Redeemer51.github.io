@@ -1,29 +1,34 @@
 //------------------------------------------------load tshirt canvas---------------------------------------------------------------------
 document.addEventListener("DOMContentLoaded", function() {
+  const canvas = document.getElementById('tshir-canvas');
+  const ctx = canvas.getContext('2d');
+  const img = new Image();
 
-    const canvas = document.getElementById('tshir-canvas');
-		const ctx = canvas.getContext('2d');
+  canvas.width = window.innerWidth;
+  canvas.height = window.innerHeight;
 
-		canvas.width = window.innerWidth;
+  img.onload = function() {
+    var scaleFactor = Math.min(canvas.width / img.width, canvas.height / img.height);
+    var scaledWidth = img.width * scaleFactor;
+    var scaledHeight = img.height * scaleFactor;
+    var x = (canvas.width - scaledWidth) / 2;
+    var y = (canvas.height - scaledHeight) / 2;
+    ctx.drawImage(img, x, y, scaledWidth, scaledHeight);
+  };
+
+  img.src = 'media/tshirtcanvas.png';
+
+  window.addEventListener('resize', function() {
+    canvas.width = window.innerWidth;
     canvas.height = window.innerHeight;
-		
-    var img = new Image();
-		img.onload = function() {
-		  ctx.drawImage(img, 0, 0, canvas.width, canvas.height);
-		};
-    img.src = 'media/tshirtcanvas.png';
-
-    window.addEventListener('resize', function() {
-      canvas.width = window.innerWidth;
-      canvas.height = window.innerHeight;
-      var scaleFactor = Math.min(canvas.width / img.width, canvas.height / img.height);
-      var scaledWidth = img.width * scaleFactor;
-      var scaledHeight = img.height * scaleFactor;
-      var x = (canvas.width - scaledWidth) / 2;
-      var y = (canvas.height - scaledHeight) / 2;
-      ctx.drawImage(img, x, y, scaledWidth, scaledHeight);
-    });
+    var scaleFactor = Math.min(canvas.width / img.width, canvas.height / img.height);
+    var scaledWidth = img.width * scaleFactor;
+    var scaledHeight = img.height * scaleFactor;
+    var x = (canvas.width - scaledWidth) / 2;
+    var y = (canvas.height - scaledHeight) / 2;
+    ctx.drawImage(img, x, y, scaledWidth, scaledHeight);
   });
+});
 
   //------------------------------------------------Side bar---------------------------------------------------------------------
 
